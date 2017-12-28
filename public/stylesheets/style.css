@@ -47,6 +47,10 @@ ul li {
   background: var(--div-bg-color);
   text-align: center;
   margin: 20px 5px 0px 5px;
+  transition: all 0.2s ease-in-out;
+}
+.dev:hover {
+  transform: scale(1.1);
 }
 .dev-container {
   text-align: justify;
@@ -156,11 +160,15 @@ ul li {
 }
 .float-div {
   display: inline-block;
-  height: 300px;
-  width: 350px;
   background: var(--div-bg-color);
   text-align: center;
   margin: 10px 20px;
+  padding: 90px;
+  font-size: 100px;
+  transition: all 0.2s ease-in-out;
+}
+.float-div:hover {
+  transform: scale(1.1);
 }
 .float-divs-container {
   padding: 15vh 5vw;
