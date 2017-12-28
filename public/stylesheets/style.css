@@ -1,0 +1,175 @@
+:root {
+  --primary-bg-color: #e7e7de;
+  --secondary-bg-color: #0f3057;
+  --third-bg-color: #cdcba6;
+  --header-bg-color: #0f3057;
+  --div-bg-color: #cdcba6;
+  --light-text: #e7e7de;
+  --dark-text: #0f3057;
+}
+h1,
+a,
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 3px;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  background-color: var(--primary-bg-color);
+  color: var(--dark-text);
+}
+a {
+  color: var(--light-text);
+}
+a.anchor {
+  display: block;
+  position: relative;
+  top: -50px;
+  visibility: hidden;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+}
+ul li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  padding: 16px;
+}
+.dev {
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  background: var(--div-bg-color);
+  text-align: center;
+  margin: 20px 5px 0px 5px;
+}
+.dev-container {
+  text-align: justify;
+}
+.dev-divs {
+  float: right;
+  position: relative;
+  left: -50%; /* or right 50% */
+  text-align: left;
+}
+.dev-divs ul {
+  position: relative;
+  left: 100%;
+}
+.dev-divs ul li {
+  float: right;
+}
+.header-edit {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.header-edit .header-title {
+  font-size: 20px;
+  -webkit-transition: font-size 300ms ease-in-out, height 300ms ease-in-out;
+  -moz-transition: font-size 300ms ease-in-out, height 300ms ease-in-out;
+  -o-transition: font-size 300ms ease-in-out, height 300ms ease-in-out;
+  transition: font-size 300ms ease-in-out, height 300ms ease-in-out;
+}
+.footer {
+  background: var(--header-bg-color);
+  height: 300px;
+}
+.footer h2 {
+  color: var(--light-text);
+}
+#header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 10px 0px;
+  height: 50px;
+  background: var(--header-bg-color);
+}
+#header a {
+  text-decoration: none;
+}
+.header-title-container,
+.header-nav-container {
+  display: inline-block;
+}
+.header-nav-container {
+  float: right;
+  padding-right: 5vw;
+}
+.header-title-container {
+  padding-left: 5vw;
+}
+.header-nav-item,
+.dev-li {
+  display: inline;
+  padding: 5px 10px;
+}
+.header-title,
+.header-nav-link {
+  text-transform: uppercase;
+}
+.header-title {
+  font-size: 30px;
+  -webkit-transition: font-size 300ms ease-in-out, height 300ms ease-in-out;
+  -moz-transition: font-size 300ms ease-in-out, height 300ms ease-in-out;
+  -o-transition: font-size 300ms ease-in-out, height 300ms ease-in-out;
+  transition: font-size 300m;
+}
+.header-nav-link {
+  font-size: 16px;
+}
+#home {
+  text-align: center;
+  background: var(--secondary-bg-color) /* For browsers that do not support gradients */;
+  background: -webkit-linear-gradient(var(--secondary-bg-color) 70%, var(--primary-bg-color)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(var(--secondary-bg-color) 70%, var(--primary-bg-color)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(var(--secondary-bg-color) 70%, var(--primary-bg-color)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(var(--secondary-bg-color) 70%, var(--primary-bg-color)); /* Standard syntax */
+}
+#home p,
+#home h1 {
+  padding: 0 20vw;
+  color: var(--light-text);
+}
+#home h1 {
+  padding-top: 100px;
+  font-size: 50px;
+}
+#home p {
+  font-size: 30px;
+}
+.float-divs {
+  position: relative;
+}
+.float-divs ul {
+  position: relative;
+  text-align: center;
+}
+.float-divs ul li {
+  display: inline-block;
+}
+.float-div {
+  display: inline-block;
+  height: 300px;
+  width: 350px;
+  background: var(--div-bg-color);
+  text-align: center;
+  margin: 10px 20px;
+}
+.float-divs-container {
+  padding: 15vh 5vw;
+  text-align: justify;
+}
+.section-container {
+  padding: 16px 15vw;
+  text-align: justify;
+}
+.section-container h1 {
+  text-align: center;
+}
