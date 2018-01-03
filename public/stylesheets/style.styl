@@ -25,6 +25,9 @@ body
   background-color: var(--primary-bg-color)
   color: var(--dark-text)
 
+.alt
+  background-color: var(--secondary-bg-color)
+
 a
   color: var(--light-text)
 
@@ -37,21 +40,21 @@ a.anchor
 ul
   list-style-type: none
   margin:0
+  padding: 0
 
 ul li
   list-style-type: none
   margin: 0
   padding: 0
 
-.container
-  padding: 16px
-
 .dev
   display: inline-block
-  height: 100px
-  width: 100px
+  // height: 100px
+  // width: 100px
   background: var(--div-bg-color)
   text-align: center
+  font-size: 50px
+  padding: 20px
   margin: 20px 5px 0px 5px
   transition: all .2s ease-in-out
 
@@ -74,12 +77,6 @@ ul li
 
   ul li
     float: right
-
-// .dev-text
-//   visibility: hidden
-//
-// .dev-text:hover
-//   visibility: show
 
 .header-edit
   position: fixed
@@ -107,8 +104,12 @@ ul li
 
   padding: 10px 0px
   height: 50px
+  line-height: 50px
 
   background: var(--header-bg-color)
+  box-shadow: 0px 5px 3px var(--header-bg-color)
+
+  z-index: 99
 
   a
     text-decoration: none
@@ -142,26 +143,39 @@ ul li
 
 #home
   text-align: center
+  padding: 100px 0
 
   background: var(--secondary-bg-color) /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(var(--secondary-bg-color) 70%, var(--primary-bg-color)); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(var(--secondary-bg-color) 70%, var(--primary-bg-color)); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(var(--secondary-bg-color) 70%, var(--primary-bg-color)); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(var(--secondary-bg-color) 70%, var(--primary-bg-color)); /* Standard syntax */
-
-
-#home
-  p, h1
-    padding: 0 20vw
-    color: var(--light-text)
+  background: -webkit-linear-gradient(var(--secondary-bg-color) 85%, var(--primary-bg-color)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(var(--secondary-bg-color) 85%, var(--primary-bg-color)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(var(--secondary-bg-color) 85%, var(--primary-bg-color)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(var(--secondary-bg-color) 85%, var(--primary-bg-color)); /* Standard syntax */
 
   h1
-    padding-top: 100px
     font-size: 50px
 
-  p
+  h2
     font-size: 30px
 
+  h3
+    font-size: 16px
+
+  p
+    font-size: 20px
+
+section
+  padding: 0 10vw
+  text-align: justify
+
+  h1, h2, h3
+    text-align: center
+
+.home-text
+  padding: 0 30vw
+
+.section-text
+  padding: 0 20vw
+  font-size: 20px
 
 .float-divs
   position: relative
@@ -176,25 +190,44 @@ ul li
 
 .float-div
   display: inline-block
-  // height: 300px
-  // width: 350px
   background: var(--div-bg-color)
+  border-radius: 5px
   text-align: center
-  margin: 10px 20px
-  padding: 90px
-  font-size: 100px
   transition: all .2s ease-in-out
+  z-index: -1
 
 .float-div:hover
   transform: scale(1.1)
 
 .float-divs-container
-  padding: 15vh 5vw
+  padding: 5vh 0vw
   text-align: justify
 
-.section-container
-  padding: 16px 15vw
-  text-align: justify
+.point-div-icon
+  padding: 30px
+  font-size: 30px
 
-  h1
-    text-align: center
+.point-div
+  width: 250px
+  margin: 25px 3vw
+
+.topic-div-icon
+  padding: 60px
+  font-size: 100px
+
+.topic-div
+  width: 250px
+  margin: 5px 3vw
+
+.user-div-icon
+  padding: 30px
+  font-size: 40px
+
+.user-div
+  width: 200px
+  margin: 25px 2vw
+
+.social-div-icon
+  margin: 5px 15px
+  padding: 10px
+  font-size: 30px
